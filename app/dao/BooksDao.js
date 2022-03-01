@@ -1,8 +1,8 @@
-function getBooks() {
+exports.getBooks = () => {
     return books;
 }
 
-function getBookById(bookId) {
+exports.getBookById = (bookId) => {
     return filterBooksById(bookId);
 }
 
@@ -18,6 +18,3 @@ const books = [
     { id: 890, name: 'Lord of the Rings' },
     { id: 900, name: 'Silmarilion' }
 ];
-
-module.exports = { getBooks };
-module.exports = { getBookById };

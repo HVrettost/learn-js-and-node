@@ -1,12 +1,9 @@
 const booksDao = require('./../dao/BooksDao')
 
-function getBooks() {
+exports.getBooks = () => {
   return booksDao.getBooks();
 }
 
-function getBookById(bookId) {
+exports.getBookById = (bookId) => {
   return booksDao.getBookById(bookId);
 }
-
-module.exports = { getBooks };
-module.exports = { getBookById };

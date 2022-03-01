@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  book-club-application:
+    build: .
+    ports:
+      - 9000:9000
+    container_name: book-club-application
